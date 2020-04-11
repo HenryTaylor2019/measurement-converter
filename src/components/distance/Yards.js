@@ -8,9 +8,9 @@ class Yards extends Component {
     render() {
         const { handleYardsInput, yards } = this.context;
 
-        let yardsToYards= (yards * 5280.0).toFixed(2) + ' ft'
-        let yardsToKilometers = (yards / 0.62137).toFixed(2) + ' km';
-        let yardsToMiles= (yards * 5280.0).toFixed(2) + ' ft'
+        let yardsToFeet= (yards * 3).toFixed(2) + ' ft'
+        let yardsToKilometers = (yards / 1093.6).toFixed(2) + ' km';
+        let yardsToMiles= (yards * 0.00056818).toFixed(2) + ' miles'
         
 
         return (
@@ -25,7 +25,7 @@ class Yards extends Component {
                     </div>
                     {yards > 0 ?
                         <div className="answer">
-                            <p>{yardsToYards}</p>
+                            <p>{yardsToFeet}</p>
                             <p>{yardsToKilometers}</p>
                             <p>{yardsToMiles}</p>
                         </div>

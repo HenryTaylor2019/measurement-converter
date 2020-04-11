@@ -9,8 +9,8 @@ class Feet extends Component {
         const { handleFeetInput, feet } = this.context;
 
         let feetToYards= (feet * 0.33333).toFixed(2) + ' yd'
-        let feetToKilometers = (feet / 3280.8).toFixed(2) + ' km';
-        let feetToMiles= (feet * 5280).toFixed(2) + ' miles'
+        let feetToMiles= (feet / 5280).toFixed(3) + ' miles'
+        let feetToKilometers = (feet / 3280.8).toFixed(3) + ' km';
         
 
         return (
