@@ -36,3 +36,56 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+}
+
+.header {
+  padding: 10px 0px;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+/* Grid */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: auto 10%;
+
+}
+
+.section {
+  padding: 20px 20px;
+  margin: 10px;
+  border: 1px solid black;
+  box-shadow: 1px antiquewhite;
+  border-radius: 10%;
+  box-shadow: 2.5px 5px #888888;
+
+}
+
+.center {
+  text-align: center;
+}
+
+h1, h2, h3, h4, p {
+  /* font-family: 'Amatic SC', cursive; */
+  font-family: 'Indie Flower', cursive;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 22px;
+}
