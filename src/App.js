@@ -2,6 +2,7 @@ import React from 'react';
 import ConverterContextProvidor from './contexts/ConverterContext';
 import Header from './components/Header';
 import Miles from './components/distance/Miles';
+import Kilometers from './components/distance/Kilometers';
 
 
 
@@ -18,6 +19,8 @@ function App() {
             <h2>Distance</h2>
           </header>
           <div className="section center"> <Miles /> </div>
+          <div className="section center"> <Kilometers /> </div>
+
         </div>
 
       </div>
