@@ -8,6 +8,7 @@ class ConverterContextProvider extends Component {
         kilometers: null,
         feet: null,
         yards: null,
+        stone: null,
     }
 
     handleMilesInput = (e) => {
@@ -42,6 +43,14 @@ class ConverterContextProvider extends Component {
         e.preventDefault();
     }
 
+    handleStoneInput = (e) => {
+        this.setState({
+            stone: e.target.value,
+
+        });
+        e.preventDefault();
+    }
+
 
     render() {
 
@@ -52,6 +61,7 @@ class ConverterContextProvider extends Component {
                 handleKilometersInput: this.handleKilometersInput,
                 handleFeetInput: this.handleFeetInput,
                 handleYardsInput: this.handleYardsInput,
+                handleStoneInput: this.handleStoneInput,
             }}>
 
                 {this.props.children}
