@@ -1,25 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
+import DistanceProvidor from './contexts/Distance';
+import Header from './components/Header';
+import Miles from './components/distance/Miles';
+import Kilometers from './components/distance/Kilometers';
+import Feet from './components/distance/Feet';
+import Yards from './components/distance/Yards';
+
+
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <DistanceProvidor>
+      <Header />
+      <div className="container" >
+
+        <div>
+          <header className="center">
+            <h2>Distance</h2>
+          </header>
+          <div className="section center"> <Miles /> </div>
+          <div className="section center"> <Kilometers /> </div>
+          <div className="section center"> <Feet /> </div>
+          <div className="section center"> <Yards /> </div>
+        </div>
+      </div>
+    </DistanceProvidor>
   );
 }
 
