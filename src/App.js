@@ -1,10 +1,7 @@
 import React from 'react';
-import DistanceProvidor from './contexts/Distance';
+import ConverterContextProvidor from './contexts/ConverterContext';
 import Header from './components/Header';
 import Miles from './components/distance/Miles';
-import Kilometers from './components/distance/Kilometers';
-import Feet from './components/distance/Feet';
-import Yards from './components/distance/Yards';
 
 
 
@@ -12,7 +9,7 @@ import './App.css';
 
 function App() {
   return (
-    <DistanceProvidor>
+    <ConverterContextProvidor>
       <Header />
       <div className="container" >
 
@@ -21,12 +18,14 @@ function App() {
             <h2>Distance</h2>
           </header>
           <div className="section center"> <Miles /> </div>
-          <div className="section center"> <Kilometers /> </div>
-          <div className="section center"> <Feet /> </div>
-          <div className="section center"> <Yards /> </div>
         </div>
+
       </div>
-    </DistanceProvidor>
+
+
+
+
+    </ConverterContextProvidor>
   );
 }
 

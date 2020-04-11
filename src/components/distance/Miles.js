@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ConverterContext } from '../../contexts/DistanceContext';
+import { ConverterContext } from '../../contexts/ConverterContext';
 
 class Miles extends Component {
     static contextType = ConverterContext;

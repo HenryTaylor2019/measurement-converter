@@ -1,8 +1,8 @@
 import React, { createContext, Component } from 'react';
 
-export const DistanceContext = createContext();
+export const ConverterContext = createContext();
 
-class DistanceContextProvider extends Component {
+class ConverterContextProvider extends Component {
     state = {
         miles: null,
         kilometers: null,
@@ -46,7 +46,7 @@ class DistanceContextProvider extends Component {
     render() {
 
         return (
-            <DistanceContext.Provider value={{
+            <ConverterContext.Provider value={{
                 ...this.state,
                 handleMilesInput: this.handleMilesInput,
                 handleKilometersInput: this.handleKilometersInput,
@@ -55,9 +55,9 @@ class DistanceContextProvider extends Component {
             }}>
 
                 {this.props.children}
-            </DistanceContext.Provider>
+            </ConverterContext.Provider>
         );
     }
 }
 
-export default DistanceContextProvider;
+export default ConverterContextProvider;
