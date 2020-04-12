@@ -51,6 +51,30 @@ class ConverterContextProvider extends Component {
         e.preventDefault();
     }
 
+    handleKilosInput = (e) => {
+
+        this.setState({
+            kilograms: e.target.value,
+        });
+        e.preventDefault();
+    }
+
+    handlePoundsInput = (e) => {
+        this.setState({
+            pounds: e.target.value,
+
+        });
+        e.preventDefault();
+    }
+
+    handleOuncesInput = (e) => {
+        this.setState({
+            ounces: e.target.value,
+
+        });
+        e.preventDefault();
+    }
+
 
     render() {
 
@@ -62,6 +86,10 @@ class ConverterContextProvider extends Component {
                 handleFeetInput: this.handleFeetInput,
                 handleYardsInput: this.handleYardsInput,
                 handleStoneInput: this.handleStoneInput,
+                handleKilosInput: this.handleKilosInput,
+                handlePoundsInput: this.handlePoundsInput,
+
+
             }}>
 
                 {this.props.children}
